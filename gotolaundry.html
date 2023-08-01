@@ -1,0 +1,54 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>gotolaundry</title>
+      
+      <link rel="stylesheet" href="gotolaundry.css">
+   </head>
+   <body>
+    <button type = "button" onclick="location.href ='index.html'" class="viewbasket">View Basket</button>
+      <nav>
+         <img src="logo.jpeg" class = "logo" width="100px" height="70px">
+         <img src="80-805068_my-profile-icon-blank-profile-picture-circle-clipart.png" class="avatar" width="50px" height="50px">
+      </nav>
+      <div class="cover">
+      <div class ="box">
+         <td><img src ="shirt.jpg" class="menu"></td>
+         <tr>
+            <p>Shirt</p>
+            <button id = "dec" >-</button>
+            <input type="text" id="qtyBox" readonly="" value="0">
+            <button id="inc" class="icrebtn">+</button>
+         </tr>
+        
+      </div>
+      <div class ="box" >
+         <td><img src ="Wkurtapalin.png" class="menu"></td>
+            <tr class="text"><p>Women kurta plain</p>
+            <button id = "dec" class="icrebtn">-</button>
+            <input type="text" id="qtyBox" readonly="" value="0">
+            <button id="inc" class="icrebtn">+</button>
+         </tr>
+      </div>
+      <div class ="box">
+         <td><img src ="TrouserPants.jpg" class="menu"></td>
+         <tr><p>full pant</p>
+            <button id = "dec" class="icrebtn">-</button>
+            <input type="text" id="qtyBox" readonly="" value="0">
+            <button id="inc" class="icrebtn">+</button>
+         </tr>
+   </div>
+</div>
+<script type = "text/javascript">
+   let incbtn document.queryselector("#inc");
+   let decbtn document.queryselector("#dec");
+   let qty document.queryselector("#qtybox");
+   incbtn.addEventListener('click',()=>{
+      qty.value = parseInt(qty.value)+1;
+   });
+   decbtn.addEventListener('click',()=>{
+      qty.value = parseInt(qty.value)-1;
+   });
+</script>
+   </body>
+</html>
